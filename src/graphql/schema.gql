@@ -1,0 +1,22 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Query {
+  getUser(id: Int!): User
+}
+
+type User {
+  displayName: String
+  getFullDetailedUser: [UserSettings!]
+  id: Int!
+  settings: UserSettings
+  username: String!
+}
+
+type UserSettings {
+  id: Int!
+  notification: Boolean!
+  showStatus: Boolean!
+  userId: Int!
+}
